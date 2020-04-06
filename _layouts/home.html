@@ -1,0 +1,25 @@
+---
+layout: "structure"
+author: "0zeraaa"
+---
+
+
+<!-- Ceci est une loupe pour afficher tout les posts-->
+<div class="articles">
+    <div class="all_posts">
+    <p class="home_content">{{ page.content }}</p>
+
+    {% for post in site.posts %}
+        <div class="posts_box">
+            <a href="{{ post.url}}" class="posts_title">{{ post.title }}</a>
+            <a href="{{ post.url}}"><p class="posts_date">{{ post.date | date_to_string }}</p></a>
+            <a href="{{ post.url}}"><p class="post_description" >{{ post.post_description | truncate_words: 20 }}</p></a>
+        </div>
+        <hr class="break_line">
+    {% endfor %}
+    </div>
+</div>
+<!-- Ceci est une loupe pour afficher tout les posts-->
+
+
+<!-- post veux dire publié-->

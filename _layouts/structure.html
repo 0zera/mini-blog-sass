@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ site.title }}</title>
+        <link rel="stylesheet" href="/assets/styles/main.css">
+    </head>
+    <body>
+
+        {% include header.html%}
+        {{ content }}
+        {% include footer.html %}
+
+    </body>
+</html>
+
+
+<!-- PRESETS HTML qu'on peut réutiliser a chaque fois (par exemple un footer et un header ) -->
+<!-- {% include header.html %}  permet d'inclue le header-->
